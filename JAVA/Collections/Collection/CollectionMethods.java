@@ -27,8 +27,8 @@ public class CollectionMethods{
         System.out.println("List2 after retainAllmethod : "+list2);
         Object[] arr=list1.toArray();
         for(Object e:arr){
-            System.out.print(e.getClass());
-
+            int a=(Integer)e;
+            System.out.print(a);
         }
 
     }
