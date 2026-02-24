@@ -20,7 +20,20 @@ public class ListMore{
         list.add(10);
         list.add(29);
         Iterator<Integer>it=list.iterator();
+        it.next();
+        it.remove();
         System.out.println(it.next());
-        System.out.println(it.next());
+        while(it.hasNext()){
+            System.out.println(it.next());
+        }
+        List<Integer>list2=new ArrayList<>();
+        list2.add(1);
+        list2.add(2);
+        list2.add(3);
+        Iterator<Integer>it2=list2.iterator();
+               while(it2.hasNext()){
+            System.out.println(it2.next());
+        }  
+        
     }
 }
