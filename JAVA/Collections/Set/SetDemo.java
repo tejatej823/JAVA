@@ -13,5 +13,14 @@ public class SetDemo{
         System.out.println(set.isEmpty());
         set.clear();
         System.out.println(set);
+        Set<Integer>set2=new HashSet<>();
+        set2.add(11);
+        set2.add(22);
+        set2.add(33);
+        set2.add(44);
+        set2.add(55);
+        set.addAll(set2);
+        System.out.println(set);
+        System.out.println(set2.contains(22));
     }
 }
